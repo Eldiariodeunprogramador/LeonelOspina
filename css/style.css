@@ -243,6 +243,16 @@ body {
     color: #f7df1e;
 }
 
+.profile__skill--excel {
+    background: rgb(33 115 70 / 15%);
+    color: #62c98a;
+}
+
+.profile__skill--power-bi {
+    background: rgb(242 200 17 / 12%);
+    color: #f2c811;
+}
+
 .profile__skill--php {
     background: rgb(119 123 180 / 15%);
     color: #aeb2f0;
