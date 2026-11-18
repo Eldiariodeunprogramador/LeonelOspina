@@ -1,0 +1,349 @@
+.web-header {
+    display: flex;
+    width: min(100%, 1160px);
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.web-header__photo {
+    margin-bottom: 0;
+}
+
+.web-header__name {
+    display: block;
+    font-weight: 700;
+}
+
+.web-development {
+    width: min(100%, 1000px);
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.web-hero {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.web-hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.web-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+.web-section__eyebrow {
+    margin: 0 0 12px;
+    color: #ffd64f;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.web-button {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 22px;
+    border: 1px solid #ffd64f;
+    border-radius: 999px;
+    background: #302d22;
+    color: #ffd64f;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.web-button:hover,
+.web-button:focus-visible {
+    background: #3a3525;
+    box-shadow: 0 0 18px rgb(255 214 79 / 25%);
+    transform: translateY(-2px);
+}
+
+.web-button:focus-visible {
+    outline: 2px solid #ffd64f;
+    outline-offset: 3px;
+}
+
+.web-section {
+    padding: 72px 0 12px;
+    text-align: center;
+}
+
+.web-section--services {
+    padding-top: 36px;
+}
+
+.web-section__title {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #f4f4f5;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+}
+
+.web-service-offering {
+    display: flex;
+    max-width: 760px;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 28px auto 0;
+    padding: 24px;
+    border: 1px solid #30343e;
+    border-radius: 14px;
+    background: #1a1d24;
+    text-align: left;
+}
+
+.web-service-offering__number {
+    flex: 0 0 auto;
+    color: #ffd64f;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.web-service-offering__content {
+    min-width: 0;
+    flex: 1;
+}
+
+.web-service-offering__title {
+    margin: 0;
+    color: #f4f4f5;
+    font-size: 1.25rem;
+}
+
+.web-service-offering__description {
+    margin: 10px 0 22px;
+    color: #a4a8b3;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.web-service-offering__features-title {
+    margin: 0 0 12px;
+    color: #f4f4f5;
+    font-size: 1rem;
+}
+
+.web-service-offering__features + .web-service-offering__features-title {
+    margin-top: 24px;
+}
+
+.web-service-offering__features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.web-service-offering__features li {
+    position: relative;
+    padding-left: 18px;
+    color: #a4a8b3;
+    line-height: 1.55;
+}
+
+.web-service-offering__features li::before {
+    position: absolute;
+    top: 0.62em;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffd64f;
+    content: "";
+}
+
+.web-service-offering__price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid #30343e;
+    color: #d3d5db;
+}
+
+.web-service-offering__price strong {
+    color: #ffd64f;
+}
+
+.web-section--estimates {
+    padding-top: 40px;
+}
+
+.web-estimates-wrapper {
+    max-width: 760px;
+    overflow-x: auto;
+    margin: 28px auto 0;
+    border: 1px solid #30343e;
+    border-radius: 14px;
+    background: #1a1d24;
+    text-align: left;
+}
+
+.web-estimates {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.web-estimates th,
+.web-estimates td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #30343e;
+    text-align: left;
+}
+
+.web-estimates thead th {
+    background: #24232a;
+    color: #ffd64f;
+}
+
+.web-estimates tbody th {
+    color: #f4f4f5;
+    font-weight: 700;
+}
+
+.web-estimates td {
+    color: #d3d5db;
+    white-space: nowrap;
+}
+
+.web-estimates tbody tr:last-child th,
+.web-estimates tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.web-process__step p,
+.web-contact__text {
+    margin: 0;
+    color: #a4a8b3;
+    line-height: 1.7;
+}
+
+.web-section--process {
+    padding-bottom: 20px;
+}
+
+.web-process {
+    display: grid;
+    gap: 14px;
+    max-width: 760px;
+    margin: 28px auto 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.web-process__step {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px;
+    border: 1px solid #30343e;
+    border-radius: 14px;
+    background: #1a1d24;
+}
+
+.web-process__number {
+    color: #ffd64f;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.web-process__step h3 {
+    margin: 0 0 6px;
+    color: #f4f4f5;
+}
+
+.web-contact {
+    margin: 60px 0 48px;
+    padding: 40px 24px;
+    border-radius: 20px;
+    background: #1a1d24;
+    text-align: center;
+}
+
+.web-contact__title {
+    margin: 0;
+    color: #f4f4f5;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.web-contact__text {
+    margin: 12px 0 22px;
+}
+
+@media (max-width: 720px) {
+    .web-service-offering__features {
+        grid-template-columns: 1fr;
+    }
+
+    .web-section {
+        padding-top: 56px;
+    }
+
+    .web-section--services {
+        padding-top: 32px;
+    }
+
+    .web-estimates th,
+    .web-estimates td {
+        padding: 14px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .web-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px 18px;
+    }
+
+    .web-development {
+        padding: 12px 18px;
+    }
+
+    .web-service-offering {
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .web-process__step {
+        gap: 12px;
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .web-button {
+        transition: none;
+    }
+
+    .web-button:hover,
+    .web-button:focus-visible {
+        transform: none;
+    }
+}
